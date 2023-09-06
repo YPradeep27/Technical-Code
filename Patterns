@@ -1,0 +1,48 @@
+
+    val numberArray = arrayOf(5,2,0,4,3,0,0,1,8)
+    lateinit var temp : Array<Int>
+    var boolean : Boolean = true
+
+
+
+         // triangle pattern
+
+        for(i in 0..4){
+            for (j in 0..i){
+                print("* ")
+            }
+            println()
+        }
+
+        // rectangle pattern
+
+        for(i in 0..4){
+            for (j in 0..6){
+                print("* ")
+            }
+            println()
+        }
+
+        // inverted pyramid pattern
+
+        for (i in 4 downTo 1) {
+            for (j in 1..4 - i) {
+                print("  ")
+            }
+            for (k in 1 until i * 2) {
+                print("* ")
+            }
+            println()
+        }
+
+        // pyramid pattern
+
+        for (i in 1..4) {
+            for (j in 1..4 - i) {
+                print("  ")
+            }
+            for (k in 1 until i * 2) {
+                print("* ")
+            }
+            println()
+        }
